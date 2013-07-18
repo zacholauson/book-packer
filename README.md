@@ -1,5 +1,13 @@
 # Book Packer
 
+## Purpose
+
+This exercise is designed to test your ability to use Java, object-oriented design principles, data structures and standard algorithms to craft a small application that can be utilized by another developer with little to no fuss. We will not only be looking at the correctness of your solution but at the style of your code, its modularity and extensibility as well as the ease at which the whole package can be built and tested. As a small team we believe these principles are a key element of our continued success. 
+
+The problem itself is not arbritary but meant to simulate the type of work you would be doing here at Datafiniti. The transformation of unstructured data into structured data (what we do all day but you knew that already) involves parsing, computationaly intensive algorithmic techniques and ultimately some method of presenting that data in a human and machine digestable format to our customers.
+
+Have fun, be creative and ask questions! 
+
 ## Problem Description
 
 In this repository you have been provided with the HTML source for twenty randonly chosen Amazon book pages.  
