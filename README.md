@@ -61,7 +61,7 @@ To begin fork this repository to your personal Github account. Your 2 week time 
 
 * Windows, OSX or Linux is fine.
 * All source must compile on Java 6 (Oracle or OpenJDK).
-* You may use any third party libraries you wish, however, all dependencies must be fully managed by Gradle.
+* You may use any third party libraries you wish, however, all dependencies must be fully managed by a standard build tool (e.g., Gradle, Maven, Ivy, Ant, etc.).
 * You must follow standard Object Oriented Design principles and techniques (e.g., submissions with only a single class will not be accepted).
 * You must provide a test suite (your choice of framework but see below).
 * The entire project (including the test suite) should be built and run through [Gradle](http://services.gradle.org/distributions/gradle-1.6-all.zip).
