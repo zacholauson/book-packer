@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This exercise is designed to test your ability to use Java, object-oriented design principles, data structures and standard algorithms to craft a small application that can be utilized by another developer with little to no fuss. We will not only be looking at the correctness of your solution but at the style of your code, its modularity and extensibility as well as the ease at which the whole package can be built and tested. As a small team we believe these principles are a key element of our continued success. 
+This exercise is designed to test your ability to use object-oriented design principles, data structures and standard algorithms to craft a small application in language of your choice that can be utilized by another developer with little to no fuss. We will not only be looking at the correctness of your solution but at the style of your code, its modularity and extensibility as well as the ease at which the whole package can be built and tested. As a small team we believe these principles are a key element of our continued success. 
 
 The problem itself is not arbritary but meant to simulate the type of work you would be doing here at Datafiniti. The transformation of unstructured data into structured data (what we do all day but you knew that already) involves parsing, computationaly intensive algorithmic techniques and ultimately some method of presenting that data in a human and machine digestable format to our customers.
 
@@ -59,12 +59,10 @@ To begin fork this repository to your personal Github account. Your 2 week time 
 
 ## Submission Requirements
 
-* Windows, OSX or Linux is fine.
-* All source must compile on Java 6 (Oracle or OpenJDK).
-* You may use any third party libraries you wish, however, all dependencies must be fully managed by a standard build tool (e.g., Gradle, Maven, Ivy, Ant, etc.).
+* Any OS is fine.
+* Any language is fine. 
+* You may use any third party libraries you wish, however, all dependencies must be fully managed by a standard build tool for the language used.
 * You must follow standard Object Oriented Design principles and techniques (e.g., submissions with only a single class will not be accepted).
-* You must provide a test suite (your choice of framework but see below).
-* The entire project (including the test suite) should be built and run through [Gradle](http://services.gradle.org/distributions/gradle-1.6-all.zip).
 * Submit a pull request to this repository when you are ready to share your solution (please include only the source code and gradle build scripts).
 
 ## Obtaining Help
