@@ -124,7 +124,7 @@ describe SimplePacker do
 end
 
 describe Exporter do
-  before(:all) do
+  before(:each) do
     @books = []
     parser = Parser.new("data/book1.html")
     book_data = parser.parse
