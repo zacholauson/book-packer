@@ -111,7 +111,7 @@ class SimplePacker
     end
 
     @boxes.each do |box|
-      p box
+       box
     end
   end
 end
