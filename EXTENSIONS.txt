@@ -1,0 +1,5 @@
+1. To go beyond just amazon I think you would have to just build up a very similar system but following the layout that site puts their products into, the logic behind it all should be the same just the selectors you find by would be different.
+
+2. On amazon I products beyond books should be almost working because Amazon lays their pages out almost identical.
+
+3. To speed up the task you could split up the task of parsing pages into separate threads or even servers then bring them together and compile your boxes and shipment objects.
