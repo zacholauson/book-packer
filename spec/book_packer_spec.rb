@@ -81,3 +81,67 @@ describe Box do
     end
   end
 end
+
+describe Parser do
+  before(:all) do
+    @parsed = Parser.new("data/book1.html")
+    @parsed_data = @parsed.parse
+  end
+
+  it "should parse out the title of the book" do
+    @parsed_data[:title].should == "Zealot: The Life and Times of Jesus of Nazareth [Hardcover]"
+  end
+
+  it "should parse out the author of the book" do
+    @parsed_data[:author].should == "Reza Aslan"
+  end
+
+  it "should parse out the price of the book" do
+    @parsed_data[:price].should == "$16.89"
+  end
+
+  it "should parse out the weight of the book" do
+    @parsed_data[:weight].should == 1.2
+  end
+
+  it "should parse out the isbn of the book" do
+    @parsed_data[:isbn].should == "140006922X"
+  end
+end
+
+describe SimplePacker do
+  before(:all) do
+    @books = []
+    parser = Parser.new("data/book1.html")
+    book_data = parser.parse
+    @books << Book.new(book_data)
+  end
+
+  it "should pack books" do
+    packer = SimplePacker.new(@books)
+    packer.pack_books[0].should be_an_instance_of(Box)
+  end
+end
+
+describe Exporter do
+  before(:all) do
+    @books = []
+    parser = Parser.new("data/book1.html")
+    book_data = parser.parse
+    @books << Book.new(book_data)
+    packer = SimplePacker.new(@books)
+    packer.pack_books
+    @exporter = Exporter.new(packer.boxes)
+    @first_book_exported = {id: 1, totalWeight: 1.2, content: [{title: "Zealot: The Life and Times of Jesus of Nazareth [Hardcover]", author: "Reza Aslan", price: "$16.89", weight: 1.2, isbn: "140006922X"}]}
+  end
+
+  it "should parse out json" do
+    @exporter.export.should == [@first_book_exported]
+  end
+
+  it "should export to exported_shipment.json" do
+    @exporter.export_json_to_file
+    File.exist?("exported_shipment.json").should be_true
+  end
+end
+
